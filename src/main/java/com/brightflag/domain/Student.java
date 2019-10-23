@@ -1,10 +1,13 @@
 package com.brightflag.domain;
 
+import java.util.List;
+
 public class Student {
 
 	private Integer studentID;
 	private String firstName;
 	private String lastName;
+	private List subjects;
 
 	public Integer getStudentID() {
 		return studentID;
@@ -28,6 +31,12 @@ public class Student {
 
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
+	}
+
+	public void setSubjects(List subjects){this.subjects = subjects;}
+
+	public List<Subject> getSubjects(){
+		return subjects;
 	}
 
 	@Override
