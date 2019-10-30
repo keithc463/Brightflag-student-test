@@ -4,6 +4,8 @@ public class Exam {
 
 	private Integer examID;
 	private String examName;
+	private Integer grade;
+	private Integer subjectID;
 
 	public Integer getExamID() {
 		return examID;
@@ -19,6 +21,22 @@ public class Exam {
 
 	public void setExamName(String examName) {
 		this.examName = examName;
+	}
+
+	public Integer getGrade() {
+		return grade;
+	}
+
+	public void setGrade(Integer grade) {
+		this.grade = grade;
+	}
+
+	public Integer getsubjectID() {
+		return subjectID;
+	}
+
+	public void setsubjectID(Integer grade) {
+		this.grade = subjectID;
 	}
 
 	@Override
